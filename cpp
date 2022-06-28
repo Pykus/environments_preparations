@@ -4,7 +4,8 @@ sudo apt install cmake
 
 Vs Code:
 download from internet,
-extensions C/C++, Cmake
+extensions C/C++, Cmake, vscodevim
+https://eellaup.medium.com/how-to-set-up-clang-format-in-visual-studio-code-in-a-vagrant-environment-georgiatech-gios-1935ed73efd1
 
 
 Google Mock:
@@ -22,3 +23,9 @@ mkdir mybuild
 cd mybuild
 cmake ..
 make
+
+
+
+
+
+curl -sLf https://spacevim.org/install.sh | bash
