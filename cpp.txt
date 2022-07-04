@@ -7,12 +7,12 @@ download from internet,
 extensions C/C++, Cmake, vscodevim
 https://eellaup.medium.com/how-to-set-up-clang-format-in-visual-studio-code-in-a-vagrant-environment-georgiatech-gios-1935ed73efd1
 
-
 Google Mock:
 https://code.google.com/p/googlemock/downloads/list
 export GMOCK_HOME=/path/to/gmock-1.X.X
 (setx GMOCK_HOME c:\downloads\gmock)
 
+>>>>>>>>>>>>>>>>>Cmake
 mkdir mybuild
 cd mybuild
 cmake ..
@@ -29,3 +29,24 @@ make
 
 
 curl -sLf https://spacevim.org/install.sh | bash
+To add C/C++ language support in SpaceVim, you need to enable the lang#c layer. Press SPC f v d to open SpaceVim configuration file, and add following configuration:
+
+[[layers]]
+  name = "lang#c"
+
+
+
+sudo apt install clang-format
+sudo apt install clang
+sudo apt install clang-tidy
+
+sudo apt install lcov
+
+1. g++ --coverage plik.cpp
+./a
+gcov a-plik.cpp
+lcov --capture --directory . --output-file=coverage.info
+genhtml coverage.info --output-directory=lcov_re
+rm *.gcov
+rm *.gcda
+rm *.gcno

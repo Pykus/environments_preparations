@@ -1,2 +1,19 @@
 vim plik.cpp +34
 //otwarcie pliku na wskazanej linii
+
+
+curl -sLf https://spacevim.org/install.sh | bash
+curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall
+
+
+spc+tab - przelaczenie miedzy plikami
+f3 - tree
+
+
+Poruszanie się:
+H M L - screen top middle bottom
+
+ci{   - change inside { - musisz stac we wskazanym brakcecie, to usunie i ustawi ci tam insert
+
+spc b [np] - przelaczanie miedzy plikami
+
