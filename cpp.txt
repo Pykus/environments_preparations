@@ -34,6 +34,11 @@ To add C/C++ language support in SpaceVim, you need to enable the lang#c layer. 
 [[layers]]
   name = "lang#c"
 
+You can add the two lines below to your ~/.vimrc to make that the default behavior:
+
+set splitbelow
+set splitright
+
 
 
 sudo apt install clang-format
@@ -50,3 +55,4 @@ genhtml coverage.info --output-directory=lcov_re
 rm *.gcov
 rm *.gcda
 rm *.gcno
+rm coverage.info
