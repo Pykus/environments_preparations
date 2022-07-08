@@ -11,13 +11,11 @@ Google Mock:
 https://code.google.com/p/googlemock/downloads/list
 export GMOCK_HOME=/path/to/gmock-1.X.X
 (setx GMOCK_HOME c:\downloads\gmock)
-
 >>>>>>>>>>>>>>>>>Cmake
 mkdir mybuild
 cd mybuild
 cmake ..
 make
-
 cd $GMOCK_HOME/gtest
 mkdir mybuild
 cd mybuild
@@ -30,12 +28,9 @@ make
 
 curl -sLf https://spacevim.org/install.sh | bash
 To add C/C++ language support in SpaceVim, you need to enable the lang#c layer. Press SPC f v d to open SpaceVim configuration file, and add following configuration:
-
 [[layers]]
   name = "lang#c"
-
 You can add the two lines below to your ~/.vimrc to make that the default behavior:
-
 set splitbelow
 set splitright
 
@@ -44,9 +39,7 @@ set splitright
 sudo apt install clang-format
 sudo apt install clang
 sudo apt install clang-tidy
-
 sudo apt install lcov
-
 1. g++ --coverage plik.cpp
 ./a
 gcov a-plik.cpp
@@ -56,3 +49,21 @@ rm *.gcov
 rm *.gcda
 rm *.gcno
 rm coverage.info
+
+gdb exec core  // a jak nie ma core to trzeba szukac
+ulimit -c unlimited 
+ulimit -a 
+
+
+
+by invoking the test executable with --gtest_catch_exceptions=0 you should be able to keep googletest from catching exceptions 
+
+
+
+:Cmake --build build
+:!build/SoundexTest
+
+
+git clone https://github.com/dylanaraps/fff.git
+cd fff
+$ make install

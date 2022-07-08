@@ -1,0 +1,9 @@
+https://plugins.jetbrains.com/plugin/164-ideavim/versions/stable
+1. Install an IDE if you don’t have one:
+Select an IDE
+2. Open your IDE and press Ctrl+Alt+S to open the IDE settings.
+3. Select Plugins, click  and then click Install Plugin from Disk.
+4. Select the plugin archive file and click OK.
+5. Click OK to apply the changes and restart your IDE if prompted.
+
+(compiler-explorer plugin)
